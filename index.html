@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Subway Runner 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container"></div>
+
+    <div id="hud">
+        <div class="score-box">
+            SCORE: <span id="score">0</span>
+        </div>
+        <div class="coin-box">
+            🪙 <span id="coins">0</span>
+        </div>
+    </div>
+
+    <div id="start-screen" class="screen">
+        <h1>🚆 SUBWAY RUNNER</h1>
+        <h2>ULTIMATE 3D</h2>
+        <p>Run • Jump • Slide • Collect Coins</p>
+        <button id="start-btn">PLAY NOW ▶</button>
+        <p class="instructions">
+            PC: Arrow Keys / WASD<br>
+            Mobile: Swipe Left, Right, Up & Down
+        </p>
+    </div>
+
+    <div id="game-over" class="screen hidden">
+        <h1>GAME OVER!</h1>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <p>Best Score: <span id="best-score">0</span></p>
+        <button id="restart-btn">PLAY AGAIN 🔄</button>
+    </div>
+
+    <script type="module" src="game.js"></script>
+
+</body>
+</html>
